@@ -1,0 +1,25 @@
+include ':app'
+include ':react-native-kochava-tracker'
+project(':react-native-kochava-tracker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-kochava-tracker/android')
+include ':react-native-advertising-id'
+project(':react-native-advertising-id').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-advertising-id/android')
+include ':react-native-user-agent'
+project(':react-native-user-agent').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-user-agent/android')
+include ':react-native-version-number'
+project(':react-native-version-number').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-version-number/android')
+include ':react-native-ad-colony'
+project(':react-native-ad-colony').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-ad-colony/android')
+include ':react-native-theorem-reach'
+project(':react-native-theorem-reach').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-theorem-reach/android')
+include ':react-native-snackbar'
+project(':react-native-snackbar').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-snackbar/android')
+include ':react-native-pollfish'
+project(':react-native-pollfish').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-pollfish/android')
+
+
+// Import gradle helpers for unimodules.
+apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+
+// Include unimodules.
+includeUnimodulesProjects(
+)
